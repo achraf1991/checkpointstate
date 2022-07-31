@@ -1,0 +1,93 @@
+.profile-card {
+  display: flex;
+  justify-content: space-evenly;
+  color: white;
+}
+.profile-content {
+  display: grid;
+}
+.compteur {
+  display: grid;
+  justify-content: center;
+  color: red;
+}
+
+.App {
+  background: linear-gradient(to right, black, #b58e95);
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 200px;
+  font-style: oblique;
+}
+.Photo img {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+}
+.felsa {
+  text-decoration: none;
+  font-size: 20px;
+  background-image: url(/public/clic1.png);
+  color: white;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 20px 40px;
+  position: relative;
+  border-radius: 8px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.felsa:before {
+  content: " ";
+  background-image: url(/public/gomycodec.png);
+  color: rgb(0, 0, 0);
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  transform: rotateY(270deg);
+  transition: all 0.5s;
+  transform-origin: left;
+  transition-delay: 0.2s;
+  border-radius: 8px;
+}
+
+.felsa:after {
+  content: "";
+  background-image: url(/public/clicc.png);
+  color: rgb(0, 0, 0);
+  top: 0;
+  left: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  transform: rotateX(270deg);
+  transition: all 0.5s;
+  transform-origin: bottom;
+  transition-delay: 0.5s;
+  border-radius: 8px;
+  width: 300px;
+  height: 70px;
+}
+
+.felsa:hover::before,
+.felsa:hover:after {
+  transform: rotateX(0deg);
+  width: 300px;
+  height: 70px;
+}
+button.felsa {
+  width: 300px;
+  height: 70px;
+  margin: 25px 0px 25px 35% !important;
+}
